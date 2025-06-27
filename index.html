@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daniel Garcia - Portfolio</title>
+        <meta
+            name="description"
+            content="Personal portfolio of Daniel Garcia - Web Developer & Designer"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <span>My Portfolio</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">Education</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__actions">
+                    <div class="user-info" id="userInfo" style="display: none">
+                        <span class="user-name" id="userName"></span>
+                        <button
+                            class="logout-btn"
+                            id="logoutBtn"
+                            title="Logout"
+                        >
+                            <i class="fas fa-sign-out-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <div class="home__data">
+                            <div class="home__social">
+                                <a
+                                    href="#"
+                                    class="home__social-icon"
+                                    target="_blank"
+                                    aria-label="LinkedIn"
+                                >
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="home__social-icon"
+                                    target="_blank"
+                                    aria-label="GitHub"
+                                >
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="home__social-icon"
+                                    target="_blank"
+                                    aria-label="Twitter"
+                                >
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+
+                            <h1 class="home__title">
+                                Hi, I'm
+                                <span class="home__title-color"
+                                    >Daniel Garcia</span
+                                >
+                            </h1>
+                            <h3 class="home__subtitle">
+                                Web Developer & Designer
+                            </h3>
+                            <p class="home__description">
+                                I create beautiful, functional, and responsive
+                                websites with modern technologies. Welcome to my
+                                portfolio!
+                            </p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me
+                                <i class="fas fa-paper-plane button__icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <img
+                                src="PersonalPortfolio/daniel.jpg"
+                                alt="Daniel Garcia"
+                                class="home__blob-img"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a
+                            href="#about"
+                            class="home__scroll-button button--flex"
+                        >
+                            <i class="fas fa-mouse home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                    <div class="about__img">
+                        <img
+                            src="PersonalPortfolio/daniel.jpg"
+                            alt="Daniel Garcia About"
+                            class="about__blob-img"
+                        />
+                    </div>
+
+                    <div class="about__data">
+                        <p class="about__description">
+                            I'm a passionate web developer and designer with
+                            expertise in modern web technologies. I enjoy
+                            creating innovative solutions and bringing ideas to
+                            life through code. With a strong foundation in both
+                            frontend and backend development, I strive to
+                            deliver high-quality, scalable applications.
+                        </p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">3+</span>
+                                <span class="about__info-name"
+                                    >Years <br />
+                                    experience</span
+                                >
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name"
+                                    >Completed <br />
+                                    projects</span
+                                >
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">5+</span>
+                                <span class="about__info-name"
+                                    >Companies <br />
+                                    worked</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="#" class="button button--flex">
+                                Download CV
+                                <i class="fas fa-download button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!-- Frontend Skills -->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="fas fa-code skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">
+                                        Frontend Developer
+                                    </h1>
+                                    <span class="skills__subtitle"
+                                        >More than 3 years</span
+                                    >
+                                </div>
+
+                                <i class="fas fa-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__html"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__css"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__js"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__react"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend Skills -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="fas fa-server skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">
+                                        Backend Developer
+                                    </h1>
+                                    <span class="skills__subtitle"
+                                        >More than 2 years</span
+                                    >
+                                </div>
+
+                                <i class="fas fa-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Node.js</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__node"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__python"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__mongo"
+                                        ></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PostgreSQL</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span
+                                            class="skills__percentage skills__postgres"
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education section" id="education">
+                <h2 class="section__title">Education</h2>
+                <span class="section__subtitle">My academic journey</span>
+
+                <div class="education__container container grid">
+                    <div class="education__content">
+                        <div class="education__data">
+                            <div>
+                                <h3 class="education__title">
+                                    Computer Science
+                                </h3>
+                                <span class="education__subtitle"
+                                    >University of Technology</span
+                                >
+                                <div class="education__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2019 - 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="education__data">
+                            <div></div>
+
+                            <div>
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education__title">
+                                    Web Development
+                                </h3>
+                                <span class="education__subtitle"
+                                    >FreeCodeCamp Certification</span
+                                >
+                                <div class="education__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2021 - 2022
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education__data">
+                            <div>
+                                <h3 class="education__title">UI/UX Design</h3>
+                                <span class="education__subtitle"
+                                    >Online Course - Coursera</span
+                                >
+                                <div class="education__calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2022 - 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="education__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="portfolio section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portfolio__container container grid">
+                    <div class="portfolio__content">
+                        <div class="portfolio__img">
+                            <svg
+                                class="portfolio__placeholder"
+                                viewBox="0 0 300 200"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="300" height="200" fill="#f0f0f0" />
+                                <text
+                                    x="150"
+                                    y="100"
+                                    text-anchor="middle"
+                                    fill="#999"
+                                    font-family="Arial"
+                                    font-size="14"
+                                >
+                                    E-commerce Platform
+                                </text>
+                            </svg>
+                        </div>
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">
+                                E-commerce Platform
+                            </h3>
+                            <p class="portfolio__description">
+                                A full-stack e-commerce solution built with
+                                React and Node.js, featuring user
+                                authentication, payment integration, and admin
+                                dashboard.
+                            </p>
+                            <div class="portfolio__buttons">
+                                <a
+                                    href="#"
+                                    class="button button--flex button--small portfolio__button"
+                                >
+                                    Demo
+                                    <i
+                                        class="fas fa-arrow-right button__icon"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="button button--flex button--small portfolio__button"
+                                >
+                                    Code
+                                    <i class="fab fa-github button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content">
+                        <div class="portfolio__img">
+                            <svg
+                                class="portfolio__placeholder"
+                                viewBox="0 0 300 200"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="300" height="200" fill="#f0f0f0" />
+                                <text
+                                    x="150"
+                                    y="100"
+                                    text-anchor="middle"
+                                    fill="#999"
+                                    font-family="Arial"
+                                    font-size="14"
+                                >
+                                    Task Management App
+                                </text>
+                            </svg>
+                        </div>
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">
+                                Task Management App
+                            </h3>
+                            <p class="portfolio__description">
+                                A collaborative task management application with
+                                real-time updates, drag-and-drop functionality,
+                                and team collaboration features.
+                            </p>
+                            <div class="portfolio__buttons">
+                                <a
+                                    href="#"
+                                    class="button button--flex button--small portfolio__button"
+                                >
+                                    Demo
+                                    <i
+                                        class="fas fa-arrow-right button__icon"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="button button--flex button--small portfolio__button"
+                                >
+                                    Code
+                                    <i class="fab fa-github button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content">
+                        <div class="portfolio__img">
+                            <svg
+                                class="portfolio__placeholder"
+                                viewBox="0 0 300 200"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect width="300" height="200" fill="#f0f0f0" />
+                                <text
+                                    x="150"
+                                    y="100"
+                                    text-anchor="middle"
+                                    fill="#999"
+                                    font-family="Arial"
+                                    font-size="14"
+                                >
+                                    Weather Dashboard
+                                </text>
+                            </svg>
+                        </div>
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Weather Dashboard</h3>
+                            <p class="portfolio__description">
+                                A responsive weather application that provides
+                                current conditions and forecasts with beautiful
+                                visualizations and location-based services.
+                            </p>
+                            <div class="portfolio__buttons">
+                                <a
+                                    href="#"
+                                    class="button button--flex button--small portfolio__button"
+                                >
+                                    Demo
+                                    <i
+                                        class="fas fa-arrow-right button__icon"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="button button--flex button--small portfolio__button"
+                                >
+                                    Code
+                                    <i class="fab fa-github button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="fas fa-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle"
+                                    >+1 (555) 123-4567</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="fas fa-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle"
+                                    >john.doe@email.com</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle"
+                                    >San Francisco, CA</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label"
+                                    >Name</label
+                                >
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="contact__input"
+                                    required
+                                />
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="email" class="contact__label"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="contact__input"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="subject" class="contact__label"
+                                >Subject</label
+                            >
+                            <input
+                                type="text"
+                                id="subject"
+                                class="contact__input"
+                                required
+                            />
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="message" class="contact__label"
+                                >Message</label
+                            >
+                            <textarea
+                                id="message"
+                                cols="0"
+                                rows="7"
+                                class="contact__input"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="button button--flex">
+                                Send Message
+                                <i class="fas fa-paper-plane button__icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Daniel Garcia</h1>
+                        <span class="footer__subtitle"
+                            >Web Developer & Designer</span
+                        >
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#education" class="footer__link"
+                                >Education</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#projects" class="footer__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a
+                            href="#"
+                            class="footer__social"
+                            target="_blank"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="footer__social"
+                            target="_blank"
+                            aria-label="GitHub"
+                        >
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="footer__social"
+                            target="_blank"
+                            aria-label="Twitter"
+                        >
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">
+                    &#169; 2025 Daniel Garcia. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Scroll Top -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fas fa-arrow-up scrollup__icon"></i>
+        </a>
+
+        <script src="script.js"></script>
+    </body>
+</html>
